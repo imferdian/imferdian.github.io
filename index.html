@@ -7,7 +7,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-    <!-- Boostrap Icon -->
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -25,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -46,7 +47,7 @@
     <section class="jumbotron text-center">
       <img src="img/DSC00035 (2).jpg" alt="Perdiansyah" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4" style="font-weight: 400">Perdiansyah</h1>
-      <p class="lead">Student</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -61,15 +62,15 @@
     <section id="about">
       <div class="container">
         <div class="row text-center">
-          <div class="col">
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
             <h2>About me</h2>
           </div>
           <div class="row justify-content-center fs-5 text-center">
-            <div class="col-md-4">
-              <p>Sedang menjalani pendidikan di Universitas Haluoleo dengan jurusan Ilmu Komputer semester 3 di Fakultas Matematika dan Ilmu Pengetahuan Alam</p>
+            <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1000">
+              <p>Sedang menjalani pendidikan di Universitas Haluoleo dengan jurusan Ilmu Komputer semester 4 di Fakultas Matematika dan Ilmu Pengetahuan Alam</p>
             </div>
-            <div class="col-md-4">
-              <p>Menyukai hal apapun tentang pemrograman, senang bermain basket, mendengarkan musik, menikmati sunset dan bulan, menonton anime, Marvelites dan Directioners</p>
+            <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200">
+              <p>Menyukai hal apapun tentang pemrograman, bermain basket, mendengarkan musik, sunset dan bulan, menonton anime, Marvelites, Swiftie dan Directioners</p>
             </div>
           </div>
         </div>
@@ -88,13 +89,13 @@
     <section id="projects">
       <div class="container">
         <div class="row text-center">
-          <div class="col">
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
             <h2>More About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3" style="margin-top: 2rem">
-            <div class="card">
+            <div class="card" data-aos="flip-down" data-aos-duration="500" data-aos-offset="205">
               <img src="img/projects/3.jpg" class="card-img-top" alt="Project 1" />
               <div class="card-body">
                 <p class="card-text text-center">Just Random Pictures</p>
@@ -102,7 +103,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3" style="margin-top: 2rem">
-            <div class="card">
+            <div class="card" data-aos="flip-down" data-aos-duration="500" data-aos-delay="100" data-aos-offset="205">
               <img src="img/projects/7.jpg" class="card-img-top" alt="Project 2" />
               <div class="card-body">
                 <p class="card-text">At Rans Cafe</p>
@@ -110,7 +111,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3" style="margin-top: 2rem">
-            <div class="card">
+            <div class="card" data-aos="flip-down" data-aos-duration="500" data-aos-delay="200" data-aos-offset="205">
               <img src="img/projects/8.jpg" class="card-img-top" alt="Project 3" />
               <div class="card-body">
                 <p class="card-text">Team Snipers Amonggedo dan Team Eagles Pondidaha</p>
@@ -118,7 +119,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-down" data-aos-duration="500" data-aos-delay="300" data-aos-offset="205">
               <img src="img/projects/9.jpg" class="card-img-top" alt="Project 4" />
               <div class="card-body">
                 <p class="card-text">Anggota LGS di Pantai Taipa</p>
@@ -126,7 +127,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-down" data-aos-duration="500" data-aos-delay="400" data-aos-offset="205">
               <img src="img/projects/10.JPG" class="card-img-top" alt="Project 5" />
               <div class="card-body">
                 <p class="card-text">Anggota Universitas 99 di kantin Perpustakaan Universitas Haluoleo</p>
@@ -145,10 +146,64 @@
     </section>
     <!-- Akhir Projects -->
 
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3" style="margin-top: 2rem">
+            <a href="#">
+              <img src="img/Gallery/thumbnail/a.jpg" alt="gambar 1" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" style="margin-top: 2rem">
+            <a href="#">
+              <img src="img/Gallery/thumbnail/b.jpg" alt="gambar 2" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" style="margin-top: 2rem">
+            <a href="#">
+              <img src="img/Gallery/thumbnail/c.jpg" alt="gambar 3" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" style="margin-top: 2rem">
+            <a href="#">
+              <img src="img/Gallery/thumbnail/d.jpg" alt="gambar 4" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/Gallery/thumbnail/e.jpg" alt="gambar 5" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/Gallery/thumbnail/f.jpg" alt="gambar 6" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/Gallery/thumbnail/g.jpg" alt="gambar 7" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/Gallery/thumbnail/h.jpg" alt="gambar 8" class="img-fluid gallery-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Gallery -->
+
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center mb-3">
           <div class="col">
             <h2>Contact Me</h2>
           </div>
@@ -206,6 +261,35 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll('.gallery-img');
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = 'fade-down';
+        img.dataset.aosDelay = i * 150;
+      });
+
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- GSAP Plugin Text -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1, text: 'Student' });
+      gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0, ease: 'back' });
+      gsap.from('.display-4', { duration: 2, x: -50, opacity: 0, delay: 0.5, ease: 'elastic' });
+    </script>
+
+    <!-- My JS -->
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyJR-qgI9-XoUoc0UzBt0gmsVIfrC6laJe4ks_dZY6L-s69Q6wZoYcdVZuKd_6io0P6/exec';
       const form = document.forms['my-contact-form'];
