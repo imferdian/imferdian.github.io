@@ -88,7 +88,7 @@
     <!-- Projects -->
     <section id="projects">
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center mb-3">
           <div class="col" data-aos="fade-down" data-aos-duration="1000">
             <h2>More About Me</h2>
           </div>
@@ -136,6 +136,40 @@
           </div>
         </div>
       </div>
+
+      <section id="my-hobbies">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>About My Hobbies</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3" style="margin-top: 2rem">
+              <div class="hobby-box">
+                <h4 class="hobby-name">Guitar</h4>
+                <img src="img/hobbies/a.png" alt="guitar" class="guitar-img" />
+                <a href="#" class="btn btn-light hobby-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3" style="margin-top: 2rem">
+              <div class="hobby-box">
+                <h4 class="hobby-name">Basket</h4>
+                <img src="img/hobbies/b.png" alt="bakset" class="guitar-img" />
+                <a href="#" class="btn btn-light hobby-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3" style="margin-top: 2rem">
+              <div class="hobby-box">
+                <h4 class="hobby-name">Laptop</h4>
+                <img src="img/hobbies/c.png" alt="laptop" class="guitar-img" />
+                <a href="#" class="btn btn-light hobby-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -315,6 +349,15 @@
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.hobby-box'), {
+        max: 25,
+        speed: 2000,
+        glare: true,
       });
     </script>
   </body>
